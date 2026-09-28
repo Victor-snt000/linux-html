@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Projeto sobre Linux: Distribuições.">
+    <meta name="author" content="Victor">
+    <meta name="keywords" content="Linux, Arch Linux, distribuições, software livre">
+    <title>Mundo Linux - Distribuições</title>
+</head>
+
+<body>
+    <header>
+        <h1>Mundo Linux</h1>
+        <nav>
+            <ul>
+                <li><a href="../index.html">Início</a></li>
+                <li><a href="sobre.html">Sobre o Linux</a></li>
+                <li><a href="distros.html">Distribuições</a></li>
+                <li><a href="midia.html">Mídia</a></li>
+                <li><a href="contato.html">Contato</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <section>
+            <h2>Comparando distribuições</h2>
+            <article>
+                <p>A tabela abaixo compara duas distribuições populares.</p>
+
+                <!-- Tentei fazer a tabela 3x3 usando colspan na última linha, mas tive dificuldade em manter o número de colunas certo:
+                     ao juntar duas células, a linha ficava com uma coluna a menos e a tabela quebrava. Resolvi contando as colunas de cada linha. -->
+                <table border="1">
+                    <caption>Distribuições Linux e seus gerenciadores de pacotes</caption>
+                    <tr>
+                        <th>Distribuição</th>
+                        <th>Base</th>
+                        <th>Gerenciador de pacotes</th>
+                    </tr>
+                    <tr>
+                        <td>Arch Linux</td>
+                        <td>Independente</td>
+                        <td>pacman</td>
+                    </tr>
+                    <tr>
+                        <td>Linux Mint</td>
+                        <td colspan="2">Baseada em Ubuntu e usa o apt</td>
+                    </tr>
+                </table>
+            </article>
+        </section>
+
+        <section>
+            <h2>Detalhes das distribuições</h2>
+            <details>
+                <summary>Arch Linux</summary>
+                <p>Distribuição de lançamento contínuo (<em>rolling release</em>), lançada em 2002. Segue a filosofia de
+                    simplicidade e deixa o usuário montar o sistema do jeito que quiser.</p>
+            </details>
+            <details>
+                <summary>Linux Mint</summary>
+                <p>Distribuição voltada para facilidade de uso, muito indicada para quem está vindo do Windows.</p>
+            </details>
+        </section>
+
+        <aside>
+            <h2>Dica</h2>
+            <p>Escolher uma distribuição é questão de <mark>gosto e necessidade</mark>: teste algumas antes de decidir.
+            </p>
+        </aside>
+    </main>
+
+    <footer>
+        <p>Projeto de HTML sem CSS e sem JavaScript - Desenvolvimento Front-end, UNIPÊ.</p>
+    </footer>
+</body>
+
+</html>

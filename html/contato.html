@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Projeto sobre Linux: Contato.">
+    <meta name="author" content="Victor">
+    <meta name="keywords" content="Linux, Arch Linux, distribuições, software livre">
+    <title>Mundo Linux - Contato</title>
+</head>
+
+<body>
+    <header>
+        <h1>Mundo Linux</h1>
+        <nav>
+            <ul>
+                <li><a href="../index.html">Início</a></li>
+                <li><a href="sobre.html">Sobre o Linux</a></li>
+                <li><a href="distros.html">Distribuições</a></li>
+                <li><a href="midia.html">Mídia</a></li>
+                <li><a href="contato.html">Contato</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <section>
+            <h2>Fale comigo</h2>
+            <article>
+                <form action="#" method="post">
+                    <fieldset>
+                        <legend>Seus dados</legend>
+
+                        <p>
+                            <label for="nome">Nome:</label>
+                            <input type="text" id="nome" name="nome" placeholder="Digite seu nome" required>
+                        </p>
+                        <p>
+                            <label for="email">E-mail:</label>
+                            <input type="email" id="email" name="email" placeholder="voce@exemplo.com" required>
+                        </p>
+                        <p>
+                            <label for="nascimento">Data de nascimento:</label>
+                            <input type="date" id="nascimento" name="nascimento" required>
+                        </p>
+                    </fieldset>
+
+                    <fieldset>
+                        <legend>Sobre Linux</legend>
+
+                        <p>
+                            <label for="distro">Distribuição favorita:</label>
+                            <input type="text" id="distro" name="distro" list="lista-distros"
+                                placeholder="Escolha ou digite" required>
+                            <datalist id="lista-distros">
+                                <option value="Arch Linux">
+                                <option value="Debian">
+                                <option value="Fedora">
+                                <option value="Linux Mint">
+                                <option value="Ubuntu">
+                            </datalist>
+                        </p>
+                        <p>
+                            <label for="nivel">Seu nível de experiência (0 a 10):</label>
+                            <input type="range" id="nivel" name="nivel" min="0" max="10" value="5">
+                        </p>
+                        <p>
+                            <label for="print">Envie uma captura de tela do seu desktop:</label>
+                            <input type="file" id="print" name="print" accept="image/*">
+                        </p>
+                        <p>
+                            <label for="mensagem">Mensagem:</label><br>
+                            <textarea id="mensagem" name="mensagem" rows="5" cols="40"
+                                placeholder="Escreva sua mensagem" required></textarea>
+                        </p>
+                    </fieldset>
+
+                    <p>
+                        <button type="submit">Enviar</button>
+                        <button type="reset">Limpar</button>
+                    </p>
+                </form>
+            </article>
+        </section>
+
+        <aside>
+            <h2>Aviso</h2>
+            <p>Os campos com <mark>required</mark> são obrigatórios.</p>
+        </aside>
+    </main>
+
+    <footer>
+        <p>Projeto de HTML sem CSS e sem JavaScript - Desenvolvimento Front-end, UNIPÊ.</p>
+    </footer>
+</body>
+
+</html>
